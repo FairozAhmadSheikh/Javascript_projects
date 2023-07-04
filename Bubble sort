@@ -1,31 +1,17 @@
-<html>
-  <head>
-    <title>Bubble Sort With Recursion</title>
-    <script>
-      let arr = [64, 34, 25, 12];
+let arr = [99,88,75, 354,102, 225, 105];
+function recursiveBubbleSort(array, length) {
+  if (length == 1) {
+    return;
+  }
+  for (let i = 0; i < length - 1; i++) {
+    if (array[i] > array[i + 1]) {
+      let temp = array[i];
+      array[i] = array[i + 1];
+      array[i + 1] = temp;
+    }
+  }
+  recursiveBubbleSort(array,length-1)
+}
 
-      function recursiveBubbleSort(data, count) {
-        if (count == 1) {
-          return;
-        }
-        let currentEl = 0;
-        
-        for (let i = 0; i < count - 1; i++) {
-          if (data[i] > data[i + 1]) {
-            let temp = data[i];
-            data[i] = data[i + 1];
-            data[i + 1] = temp;
-            currentEl++;
-          }
-        }
-        recursiveBubbleSort(data,count-1)
-      }
-
-      recursiveBubbleSort(arr, arr.length);
-      console.warn(arr)
-    </script>
-  </head>
-  <body>
-    <h1>Bubble Sort With Recursion</h1>
-  </body>
-</html>
+recursiveBubbleSort(arr, arr.length);
+console.log(arr)
