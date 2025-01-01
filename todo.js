@@ -28,3 +28,12 @@ function markDone(i) {
     console.log("❌ Invalid index.");
   }
 }
+function deleteTask(i) {
+  const idx = Number(i) - 1;
+  if (tasks[idx]) {
+    console.log(`🗑️ Deleted: "${tasks[idx].text}"`);
+    tasks.splice(idx, 1);
+  } else {
+    console.log("❌ Invalid index.");
+  }
+}
