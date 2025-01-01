@@ -37,3 +37,12 @@ function deleteTask(i) {
     console.log("❌ Invalid index.");
   }
 }
+function showHelp() {
+  console.log(`
+Usage:
+  node todo.js list
+  node todo.js add "Buy milk"
+  node todo.js done 1
+  node todo.js delete 2
+`);
+}
