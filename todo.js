@@ -14,3 +14,8 @@ function listTasks() {
     });
   }
 }
+function addTask(text) {
+  if (!text) return console.log("❌ Please provide a task.");
+  tasks.push({ text, done: false });
+  console.log(`✅ Added: "${text}"`);
+}
