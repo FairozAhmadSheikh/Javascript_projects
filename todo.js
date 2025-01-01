@@ -19,3 +19,12 @@ function addTask(text) {
   tasks.push({ text, done: false });
   console.log(`✅ Added: "${text}"`);
 }
+function markDone(i) {
+  const idx = Number(i) - 1;
+  if (tasks[idx]) {
+    tasks[idx].done = true;
+    console.log(`✅ Marked done: "${tasks[idx].text}"`);
+  } else {
+    console.log("❌ Invalid index.");
+  }
+}
