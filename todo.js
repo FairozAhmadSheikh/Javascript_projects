@@ -46,3 +46,10 @@ Usage:
   node todo.js delete 2
 `);
 }
+switch (command) {
+  case "list":   listTasks(); break;
+  case "add":    addTask(args.join(" ")); break;
+  case "done":   markDone(args[0]); break;
+  case "delete": deleteTask(args[0]); break;
+  default:       showHelp(); 
+}
