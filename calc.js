@@ -20,3 +20,11 @@ if (isNaN(num1) || isNaN(num2)) {
   console.log("❌ Please provide valid numbers.");
   process.exit(1);
 }
+switch (operation) {
+  case "add":
+    console.log(`🔢 ${num1} + ${num2} = ${num1 + num2}`);
+    break;
+
+  case "sub":
+    console.log(`🔢 ${num1} - ${num2} = ${num1 - num2}`);
+    break;
