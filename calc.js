@@ -39,3 +39,7 @@ switch (operation) {
       console.log(`🔢 ${num1} / ${num2} = ${num1 / num2}`);
     }
     break;
+    default:
+    console.log("❌ Unknown operation. Use add, sub, mul, or div.");
+    break;
+}
