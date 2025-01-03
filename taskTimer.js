@@ -1,5 +1,7 @@
+
 const readline = require('readline');
 const rl = readline.createInterface({ input: process.stdin, output: process.stdout });
+
 function startTimer(minutes) {
   let secondsLeft = minutes * 60;
 
@@ -7,6 +9,7 @@ function startTimer(minutes) {
     const min = Math.floor(secondsLeft / 60);
     const sec = secondsLeft % 60;
     console.log(`⏳ ${min}m ${sec}s`);
+
     if (secondsLeft <= 0) {
       clearInterval(interval);
       console.log("🔔 Time's up!");
@@ -16,9 +19,10 @@ function startTimer(minutes) {
     secondsLeft--;
   }, 1000);
 }
+
 rl.question("Enter task name: ", (task) => {
-  rl.question("Enter time in minutes: ", (time) => 
+  rl.question("Enter time in minutes: ", (time) => {
     console.log(`Started "${task}" for ${time} minutes.`);
     startTimer(parseInt(time));
-    });
+  });
 });
