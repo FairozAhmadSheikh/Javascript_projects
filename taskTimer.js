@@ -13,3 +13,6 @@ function startTimer(minutes) {
       process.stdout.write('\x07'); // Beep
       rl.close();
     }
+    secondsLeft--;
+  }, 1000);
+}
