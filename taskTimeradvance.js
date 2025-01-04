@@ -20,3 +20,5 @@ rl.question("Enter task name: ", (task) => {
   rl.question("Enter time in minutes: ", (time) => {
   console.log(`Started "${task}" for ${time} minutes.`);
   startTimer(parseInt(time)); 
+ });
+});
