@@ -15,4 +15,7 @@ function startTimer(minutes) {
         }
         secondsLeft--;
     }, 1000);
-    }
+}
+rl.question("Enter task name: ", (task) => {
+  rl.question("Enter time in minutes: ", (time) => {
+    
