@@ -18,3 +18,4 @@ function guess() {
     }
   });
 }
+guess();
