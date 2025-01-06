@@ -9,3 +9,6 @@ function guess() {
     if (guessNum === secret) {
       console.log(`🎉 Correct! You guessed in ${attempts} attempts.`);
       rl.close();
+    } else if (guessNum > secret) {
+      console.log("Too high!");
+      guess();
