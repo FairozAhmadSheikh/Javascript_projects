@@ -12,3 +12,5 @@ function guess() {
     } else if (guessNum > secret) {
       console.log("Too high!");
       guess();
+    } else {
+      console.log("Too low!");
