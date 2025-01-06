@@ -14,3 +14,4 @@ function guess() {
       guess();
     } else {
       console.log("Too low!");
+      guess();
