@@ -3,3 +3,4 @@ const rl = readline.createInterface({ input: process.stdin, output: process.stdo
 rl.question("Enter your weight (kg): ", (weight) => {
     rl.question("Enter your height (m): ", (height) => {
         const bmi = parseFloat(weight) / (parseFloat(height) ** 2);
+        console.log(`Your BMI is: ${bmi.toFixed(2)}`);
