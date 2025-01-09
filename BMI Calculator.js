@@ -6,3 +6,5 @@ rl.question("Enter your weight (kg): ", (weight) => {
         console.log(`Your BMI is: ${bmi.toFixed(2)}`);
         if (bmi < 18.5) console.log("Underweight");
         else if (bmi < 24.9) console.log("Normal");
+        else if (bmi < 29.9) console.log("Overweight");
+        else console.log("Obese"); 
