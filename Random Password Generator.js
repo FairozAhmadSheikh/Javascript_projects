@@ -7,3 +7,4 @@ rl.question("Enter desired password length: ", (len) => {
   for (let i = 0; i < length; i++) {
     password += chars.charAt(Math.floor(Math.random() * chars.length));
  }
+ console.log("Generated Password:", password);
