@@ -9,3 +9,4 @@ rl.question("Enter desired password length: ", (len) => {
  }
 console.log("Generated Password:", password);
 rl.close();
+});
