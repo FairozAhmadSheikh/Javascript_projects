@@ -7,3 +7,5 @@ rl.question("Enter countdown time in seconds: ", (sec) => {
     if (time <= 0){
       console.log("⏰ Time's up!");
       clearInterval(interval);
+      rl.close();
+    } 
