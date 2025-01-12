@@ -13,3 +13,4 @@ rl.question("Enter countdown time in seconds: ", (sec) => {
       console.log(`⏳ ${time} sec left`);
       time--;}
   }, 1000);
+});
