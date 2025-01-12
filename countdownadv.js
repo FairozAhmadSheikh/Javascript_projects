@@ -9,3 +9,6 @@ rl.question("Enter countdown time in seconds: ", (sec) => {
       clearInterval(interval);
       rl.close();
     } 
+    else {
+      console.log(`⏳ ${time} sec left`);
+      time--;
