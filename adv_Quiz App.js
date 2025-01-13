@@ -24,3 +24,4 @@ function askQuestion() {
     rl.close();
   }
 }
+askQuestion();
