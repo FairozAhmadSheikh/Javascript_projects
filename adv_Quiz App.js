@@ -18,3 +18,5 @@ function askQuestion() {
     }
     index++;
     askQuestion();
+   });
+     } else
