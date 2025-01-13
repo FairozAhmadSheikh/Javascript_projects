@@ -7,3 +7,9 @@ const questions = [
 ];
 let score = 0;
 let index = 0;
+function askQuestion() {
+  if (index < questions.length) {
+    rl.question(`${questions[index].q} `, (answer) => {
+      if (answer.trim().toLowerCase() === questions[index].a) {
+        console.log("✅ Correct!");
+        score++;
