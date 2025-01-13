@@ -5,3 +5,5 @@ const questions = [
   { q: "5 + 3 = ?", a: "8" },
   { q: "JS stands for?", a: "javascript" },
 ];
+let score = 0;
+let index = 0;
