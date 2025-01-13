@@ -19,4 +19,8 @@ function askQuestion() {
     index++;
     askQuestion();
    });
-     } else
+     } else{
+        console.log(`Quiz Over. You scored ${score}/${questions.length}`);
+    rl.close();
+  }
+}
