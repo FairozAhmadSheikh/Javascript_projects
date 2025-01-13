@@ -13,3 +13,8 @@ function askQuestion() {
       if (answer.trim().toLowerCase() === questions[index].a) {
         console.log("✅ Correct!");
         score++;
+    } else {
+      console.log("❌ Wrong!");
+    }
+    index++;
+    askQuestion();
