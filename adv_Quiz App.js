@@ -3,3 +3,5 @@ const rl = readline.createInterface({ input: process.stdin, output: process.stdo
 const questions = [
   { q: "Capital of France?", a: "paris" },
   { q: "5 + 3 = ?", a: "8" },
+  { q: "JS stands for?", a: "javascript" },
+];
