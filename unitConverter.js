@@ -7,3 +7,7 @@ Unit Converter:
 3. Kilograms to Pounds
 4. Exit
 Choose an option: `;
+function showMenu() {
+  rl.question(convertMenu, (option) => {
+    switch (option) {
+      case '1':
