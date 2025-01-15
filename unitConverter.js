@@ -31,3 +31,7 @@ function showMenu() {
       case '4':
         rl.close();
         break;
+        default:
+        console.log("Invalid choice");
+        showMenu();
+    }
