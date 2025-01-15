@@ -35,3 +35,6 @@ function showMenu() {
         console.log("Invalid choice");
         showMenu();
     }
+    });
+}
+showMenu();
