@@ -11,3 +11,8 @@ function showMenu() {
   rl.question(convertMenu, (option) => {
     switch (option) {
       case '1':
+        rl.question("Enter Celsius: ", (c) => {
+          console.log(`${c}°C = ${(parseFloat(c) * 9/5 + 32).toFixed(2)}°F`);
+          showMenu();
+        });
+        break;
