@@ -21,3 +21,13 @@ function showMenu() {
           console.log(`${m} m = ${(parseFloat(m) / 1000).toFixed(3)} km`);
           showMenu();
         });
+    break;
+      case '3':
+        rl.question("Enter kg: ", (kg) => {
+          console.log(`${kg} kg = ${(parseFloat(kg) * 2.20462).toFixed(2)} lbs`);
+          showMenu();
+        });
+        break;
+      case '4':
+        rl.close();
+        break;
