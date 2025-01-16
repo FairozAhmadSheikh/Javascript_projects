@@ -26,3 +26,12 @@ function handleInput(choice) {
       todos.forEach((t, i) => console.log(`${i + 1}: ${t}`));
       showMenu();
       break;
+    case '3':
+      rl.question("Enter index to delete: ", (i) => {
+        const index = parseInt(i) - 1;
+        if (todos[index]) {
+          todos.splice(index, 1);
+          console.log("Todo deleted.");
+        } else {
+          console.log("Invalid index.");
+        }
