@@ -46,3 +46,5 @@ function handleInput(choice) {
       showMenu();
   }
 }
+
+showMenu();
