@@ -35,3 +35,14 @@ function handleInput(choice) {
         } else {
           console.log("Invalid index.");
         }
+         showMenu();
+      });
+      break;
+    case '4':
+      rl.close();
+      break;
+    default:
+      console.log("Invalid option.");
+      showMenu();
+  }
+}
