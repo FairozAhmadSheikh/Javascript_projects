@@ -12,3 +12,17 @@ function showMenu() {
   console.log("4. Exit");
   rl.question("Choose an option: ", handleInput);
 }
+function handleInput(choice) {
+  switch (choice) {
+    case '1':
+      rl.question("Enter todo: ", (todo) => {
+        todos.push(todo);
+        console.log("Todo added.");
+        showMenu();
+      });
+      break;
+    case '2':
+      console.log("\nYour Todos:");
+      todos.forEach((t, i) => console.log(`${i + 1}: ${t}`));
+      showMenu();
+      break;
