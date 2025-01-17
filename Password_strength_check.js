@@ -16,3 +16,6 @@ rl.question("Enter your password: ", (password) => {
   if (passed === 5){
     console.log("Strength: 🔒 Strong");
   }
+  else if (passed >= 3) {
+    console.log("Strength: ⚠️ Moderate");
+  } else 
