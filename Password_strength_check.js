@@ -21,3 +21,5 @@ rl.question("Enter your password: ", (password) => {
   } else {
     console.log("Strength: ❌ Weak");
   }
+   rl.close();
+});
