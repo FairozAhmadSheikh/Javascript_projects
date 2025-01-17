@@ -13,4 +13,6 @@ rl.question("Enter your password: ", (password) => {
 
   const passed = [length, upper, lower, digit, special].filter(Boolean).length;
 
-  if (passed === 5)
+  if (passed === 5){
+    console.log("Strength: 🔒 Strong");
+  }
