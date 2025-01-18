@@ -20,3 +20,6 @@ rl.question("Enter first number: ", (num1) => {
       }
     console.log(`Result: ${result}`);
     rl.close();
+     });
+  });
+});
