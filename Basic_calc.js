@@ -18,3 +18,5 @@ rl.question("Enter first number: ", (num1) => {
         case '/': result = b !== 0 ? a / b : 'Error (divide by zero)'; break;
         default: result = 'Invalid operator';
       }
+    console.log(`Result: ${result}`);
+    rl.close();
