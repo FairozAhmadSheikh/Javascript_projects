@@ -11,3 +11,10 @@ rl.question("Enter first number: ", (num1) => {
         let result;
       const a = parseFloat(num1);
       const b = parseFloat(num2);
+        switch (operator) {
+        case '+': result = a + b; break;
+        case '-': result = a - b; break;
+        case '*': result = a * b; break;
+        case '/': result = b !== 0 ? a / b : 'Error (divide by zero)'; break;
+        default: result = 'Invalid operator';
+      }
