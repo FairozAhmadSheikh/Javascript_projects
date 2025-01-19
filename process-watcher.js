@@ -11,3 +11,5 @@ exec(command, (error, stdout) => {
   }
 const lines = stdout.split("\n").filter(line => line.toLowerCase().includes(filter))
   if (lines.length === 0) {
+    console.log("No matching processes found")
+  } else
