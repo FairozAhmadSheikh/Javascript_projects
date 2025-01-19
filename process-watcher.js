@@ -9,3 +9,5 @@ exec(command, (error, stdout) => {
     console.log("Failed to list processes")
     process.exit(1)
   }
+const lines = stdout.split("\n").filter(line => line.toLowerCase().includes(filter))
+  if (lines.length === 0) {
