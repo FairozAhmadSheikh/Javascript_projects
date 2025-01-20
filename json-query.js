@@ -23,3 +23,7 @@ try {
   if (typeof result === "object") {
     console.log(JSON.stringify(result, null, 2))
   } else
+  {
+    console.log(result)
+  }
+}
