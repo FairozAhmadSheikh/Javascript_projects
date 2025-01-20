@@ -10,3 +10,8 @@ if (!filePath || !query) {
 try {
   const data = JSON.parse(fs.readFileSync(filePath, "utf8"))
   const keys = query.split(".")
+  let result = data
+  for (const key of keys) {
+    if (result && key in result) {
+      result = result[key]
+    }
