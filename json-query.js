@@ -7,3 +7,6 @@ if (!filePath || !query) {
   console.log("Usage: json-query.js <file.json> <dot.notation.query>")
   process.exit(1)
 }
+try {
+  const data = JSON.parse(fs.readFileSync(filePath, "utf8"))
+  const keys = query.split(".")
