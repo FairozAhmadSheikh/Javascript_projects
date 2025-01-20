@@ -20,3 +20,6 @@ try {
       process.exit(1)
     }
   }
+  if (typeof result === "object") {
+    console.log(JSON.stringify(result, null, 2))
+  } else
