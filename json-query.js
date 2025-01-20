@@ -15,3 +15,8 @@ try {
     if (result && key in result) {
       result = result[key]
     }
+    else {
+      console.log("Query not found")
+      process.exit(1)
+    }
+  }
