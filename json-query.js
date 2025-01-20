@@ -26,4 +26,6 @@ try {
   {
     console.log(result)
   }
+}catch {
+  console.log("Invalid JSON file or query")
 }
