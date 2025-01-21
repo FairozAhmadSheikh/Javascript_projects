@@ -16,3 +16,7 @@ function scanPort(port) {
     socket.on("connect", () => {
       open = true
       socket.destroy()
+      socket.setTimeout(500)
+      socket.on("connect", () => {
+      open = true
+      socket.destroy()
