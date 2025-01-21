@@ -27,3 +27,14 @@ function scanPort(port) {
     socket.on("close", () => resolve({ port, open }))
 
     socket.connect(port, host)
+     })
+}
+
+;(async () => {
+  for (let port = startPort; port <= endPort; port++) {
+    const result = await scanPort(port)
+    if (result.open) {
+      console.log(`Port ${result.port} is open`)
+    }
+  }
+})()
