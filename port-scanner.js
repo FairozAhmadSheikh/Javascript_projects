@@ -20,3 +20,10 @@ function scanPort(port) {
       socket.on("connect", () => {
       open = true
       socket.destroy()
+      })
+
+    socket.on("timeout", () => socket.destroy())
+    socket.on("error", () => resolve({ port, open: false }))
+    socket.on("close", () => resolve({ port, open }))
+
+    socket.connect(port, host)
