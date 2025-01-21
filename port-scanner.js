@@ -11,4 +11,8 @@ if (!host) {
 function scanPort(port) {
   return new Promise(resolve => {
     const socket = new net.Socket()
-    let open = falsec
+    let open = false
+    socket.setTimeout(500)
+    socket.on("connect", () => {
+      open = true
+      socket.destroy()
