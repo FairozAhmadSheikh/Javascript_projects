@@ -24,3 +24,7 @@ https.get(feedUrl, res => {
     } catch {
       console.log("Failed to parse RSS feed")
     }
+     })
+}).on("error", () => {
+  console.log("Failed to fetch RSS feed")
+})
