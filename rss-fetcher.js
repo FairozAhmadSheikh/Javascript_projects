@@ -12,3 +12,11 @@ https.get(feedUrl, res => {
   res.on("data", chunk => {
     data += chunk
   })
+  res.on("end", () => {
+    try {
+      const root = parse(data)
+      const items = root.querySelectorAll("item")
+      items.slice(0, 5).forEach(item => {
+        const title = item.querySelector("title")?.text
+        const link = item.querySelector("link")?.text
+        console.log(`- ${title}\n  ${link}`)
