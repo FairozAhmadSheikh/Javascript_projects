@@ -6,3 +6,9 @@ if (!feedUrl || !feedUrl.startsWith("http")) {
   console.log("Usage: rss-fetcher.js <rss-feed-url>")
   process.exit(1)
 }
+https.get(feedUrl, res => {
+  let data = ""
+
+  res.on("data", chunk => {
+    data += chunk
+  })
