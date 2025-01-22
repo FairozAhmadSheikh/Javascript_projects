@@ -20,3 +20,7 @@ https.get(feedUrl, res => {
         const title = item.querySelector("title")?.text
         const link = item.querySelector("link")?.text
         console.log(`- ${title}\n  ${link}`)
+        })
+    } catch {
+      console.log("Failed to parse RSS feed")
+    }
