@@ -11,3 +11,5 @@ try {
      })
      bject.entries(summary).forEach(([author, messages]) => {
     console.log(`\n${author} (${messages.length} commits)`)
+    messages.slice(0, 5).forEach(msg => {
+      console.log(`- ${msg}`)
