@@ -5,3 +5,7 @@ try {
   const summary = {}
 
   lines.forEach(line => {
+    const [author, message] = line.split("|")
+    if (!summary[author]) summary[author] = []
+    summary[author].push(message.trim())
+     })
