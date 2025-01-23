@@ -9,3 +9,5 @@ try {
     if (!summary[author]) summary[author] = []
     summary[author].push(message.trim())
      })
+     bject.entries(summary).forEach(([author, messages]) => {
+    console.log(`\n${author} (${messages.length} commits)`)
