@@ -13,3 +13,8 @@ try {
     console.log(`\n${author} (${messages.length} commits)`)
     messages.slice(0, 5).forEach(msg => {
       console.log(`- ${msg}`)
+      })
+  })
+} catch {
+  console.log("Not a valid Git repository or Git is not installed")
+}
