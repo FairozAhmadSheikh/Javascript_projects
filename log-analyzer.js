@@ -33,3 +33,8 @@ rl.on("close", () => {
   sortedIPs.slice(0, 5).forEach(([ip, count]) => {
     console.log(`${ip}: ${count}`)
   })
+  console.log("Status Code Summary:")
+  sortedStatus.forEach(([code, count]) => {
+    console.log(`${code}: ${count}`)
+  })
+})
