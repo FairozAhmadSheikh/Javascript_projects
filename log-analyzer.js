@@ -7,3 +7,6 @@ if (!filePath || !fs.existsSync(filePath)) {
   console.log("Usage: log-analyzer.js <path-to-log-file>")
   process.exit(1)
 }
+const ipCount = {}
+const statusCount = {}
+let totalLines = 0
