@@ -24,3 +24,8 @@ rl.on("line", line => {
   if (ip) ipCount[ip] = (ipCount[ip] || 0) + 1
   if (status) statusCount[status] = (statusCount[status] || 0) + 1
 })
+rl.on("close", () => {
+  console.log(`Total Requests: ${totalLines}`)
+
+  const sortedIPs = Object.entries(ipCount).sort((a, b) => b[1] - a[1])
+  const sortedStatus = Object.entries(statusCount).sort((a, b) => b[1] - a[1])
