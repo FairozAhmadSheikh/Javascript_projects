@@ -10,3 +10,7 @@ if (!filePath || !fs.existsSync(filePath)) {
 const ipCount = {}
 const statusCount = {}
 let totalLines = 0
+const rl = readline.createInterface({
+  input: fs.createReadStream(filePath),
+  crlfDelay: Infinity
+})
