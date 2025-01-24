@@ -29,3 +29,7 @@ rl.on("close", () => {
 
   const sortedIPs = Object.entries(ipCount).sort((a, b) => b[1] - a[1])
   const sortedStatus = Object.entries(statusCount).sort((a, b) => b[1] - a[1])
+ console.log("Top 5 IPs:")
+  sortedIPs.slice(0, 5).forEach(([ip, count]) => {
+    console.log(`${ip}: ${count}`)
+  })
