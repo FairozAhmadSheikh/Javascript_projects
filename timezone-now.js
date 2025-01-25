@@ -2,4 +2,5 @@ const args = process.argv.slice(2)
 const tz = args[0]
 if (!tz) {
     console.log("Usage: timezone-now.js <time-zone>")
-    
+    process.exit(1)
+}
