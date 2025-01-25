@@ -7,3 +7,4 @@ if (!tz) {
 try {
     const now = new Date().toLocaleString("en-US", { timeZone: tz })
   console.log(`Current time in ${tz}: ${now}`)
+  } catch {
