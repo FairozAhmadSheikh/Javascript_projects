@@ -4,3 +4,4 @@ if (!tz) {
     console.log("Usage: timezone-now.js <time-zone>")
     process.exit(1)
 }
+try {
