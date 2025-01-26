@@ -18,3 +18,5 @@ else if (unit === "f") {
 else if (unit === "k") {
   const c = value - 273.15
   const f = c * 9 / 5 + 32
+  console.log(`${value}K = ${c.toFixed(2)}°C = ${f.toFixed(2)}°F`)
+}
