@@ -20,3 +20,6 @@ else if (unit === "k") {
   const f = c * 9 / 5 + 32
   console.log(`${value}K = ${c.toFixed(2)}°C = ${f.toFixed(2)}°F`)
 }
+else {
+  console.log("Invalid unit. Use c, f, or k")
+}
