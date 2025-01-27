@@ -4,3 +4,6 @@ const quotes = [
   "Life is what happens when you're busy making other plans",
   "You miss 100 percent of the shots you don’t take",
     "In the middle of difficulty lies opportunity"
+    ]
+
+const index = Math.floor(Math.random() * quotes.length)
