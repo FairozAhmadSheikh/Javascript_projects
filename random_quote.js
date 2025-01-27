@@ -7,3 +7,4 @@ const quotes = [
     ]
 
 const index = Math.floor(Math.random() * quotes.length)
+console.log(quotes[index])
