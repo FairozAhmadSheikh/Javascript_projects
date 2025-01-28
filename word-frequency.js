@@ -19,3 +19,5 @@ Object.entries(freq)
       console.log(`${word}: ${count}`)
     })
     } catch {
+         console.log("Could not read the file")
+}
