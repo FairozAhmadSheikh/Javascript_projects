@@ -13,3 +13,8 @@ try {
   words.forEach(word => {
     freq[word] = (freq[word] || 0) + 1
   })
+Object.entries(freq)
+    .sort((a, b) => b[1] - a[1])
+    .forEach(([word, count]) => {
+      console.log(`${word}: ${count}`)
+    })
