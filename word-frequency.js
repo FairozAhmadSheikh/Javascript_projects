@@ -18,3 +18,4 @@ Object.entries(freq)
     .forEach(([word, count]) => {
       console.log(`${word}: ${count}`)
     })
+    } catch {
