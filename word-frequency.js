@@ -10,3 +10,6 @@ try {
   const text = fs.readFileSync(filePath, "utf8").toLowerCase()
   const words = text.match(/\b\w+\b/g) || []
   const freq = {}
+  words.forEach(word => {
+    freq[word] = (freq[word] || 0) + 1
+  })
