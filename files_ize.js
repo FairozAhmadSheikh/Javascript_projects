@@ -6,3 +6,5 @@ if (!filePath) {
   console.log("Usage: file-size.js <path-to-file>")
   process.exit(1)
 }
+fs.stat(filePath, (err, stats) => {
+  if (err) 
