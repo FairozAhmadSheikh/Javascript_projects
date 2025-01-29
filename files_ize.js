@@ -16,3 +16,5 @@ const sizeKB = sizeBytes / 1024
 const sizeMB = sizeKB / 1024
 console.log(`Size: ${sizeBytes} B`)
 console.log(`Size: ${sizeKB.toFixed(2)} KB`)
+console.log(`Size: ${sizeMB.toFixed(2)} MB`)
+})
