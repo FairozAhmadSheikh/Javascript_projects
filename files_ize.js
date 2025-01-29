@@ -11,3 +11,6 @@ fs.stat(filePath, (err, stats) => {
     console.error("File not found or inaccessible")
     process.exit(1)
   }
+const sizeBytes = stats.size
+  const sizeKB = sizeBytes / 1024
+  const sizeMB = sizeKB / 1024
