@@ -7,4 +7,7 @@ if (!filePath) {
   process.exit(1)
 }
 fs.stat(filePath, (err, stats) => {
-  if (err) 
+  if (err) {
+    console.error("File not found or inaccessible")
+    process.exit(1)
+  }
