@@ -12,3 +12,5 @@ exec(cmd, (err, stdout, stderr) => {
     console.error("Failed to list processes")
     process.exit(1)
   }
+ console.log(stdout)
+})
