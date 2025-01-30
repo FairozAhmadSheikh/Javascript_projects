@@ -4,4 +4,6 @@ const platform = process.platform
 let cmd = ""
 if (platform === "win32") {
   cmd = "tasklist"
-} else 
+} else {
+  cmd = "ps -e -o pid,comm"
+}
