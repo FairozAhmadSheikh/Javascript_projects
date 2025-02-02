@@ -13,3 +13,7 @@ function getCpuUsage() {
    return { idle: totalIdle / cpus.length, total: totalTick / cpus.length }
 }
 const start = getCpuUsage()
+setTimeout(() => {
+  const end = getCpuUsage()
+  const idleDiff = end.idle - start.idle
+  const totalDiff = end.total - start.total
