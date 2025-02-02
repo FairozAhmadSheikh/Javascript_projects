@@ -12,3 +12,4 @@ function getCpuUsage() {
   })
    return { idle: totalIdle / cpus.length, total: totalTick / cpus.length }
 }
+const start = getCpuUsage()
