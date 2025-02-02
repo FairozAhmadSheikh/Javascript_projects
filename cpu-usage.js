@@ -19,3 +19,4 @@ setTimeout(() => {
   const totalDiff = end.total - start.total
   const usage = 100 - Math.round(100 * idleDiff / totalDiff)
   console.log(`CPU Usage: ${usage}%`)
+  }, 1000)
