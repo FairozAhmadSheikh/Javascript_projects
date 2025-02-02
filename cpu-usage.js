@@ -10,3 +10,5 @@ function getCpuUsage() {
     }
     totalIdle += cpu.times.idle
   })
+   return { idle: totalIdle / cpus.length, total: totalTick / cpus.length }
+}
