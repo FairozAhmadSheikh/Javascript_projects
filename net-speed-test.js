@@ -18,4 +18,5 @@ https.get(url, res => {
     const speed = mb / seconds
     console.log(`Downloaded ${mb.toFixed(2)} MB in ${seconds.toFixed(2)} seconds`)
     console.log(`Speed: ${speed.toFixed(2)} MB/s`)
-    
+    })
+}).on("error", err =>
