@@ -11,3 +11,8 @@ https.get(url, res => {
   res.on("data", chunk => {
     downloaded += chunk.length
   })
+  res.on("end", () => {
+    const end = performance.now()
+    const seconds = (end - start) / 1000
+    const mb = downloaded / (1024 * 1024)
+    const speed = mb / seconds
