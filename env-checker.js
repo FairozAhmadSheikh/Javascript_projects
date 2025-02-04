@@ -9,3 +9,6 @@ const value = process.env[key]
 if (value) {
   console.log(`${key} = ${value}`)
 } 
+else {
+  console.log(`${key} is not defined`)
+}
