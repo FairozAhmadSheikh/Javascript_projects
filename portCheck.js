@@ -10,3 +10,5 @@ server.once("error", err => {
     } else {
     console.log("Error:", err.message)
   }
+  process.exit(1)
+})
