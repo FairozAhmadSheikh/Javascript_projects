@@ -7,3 +7,6 @@ const server = net.createServer()
 server.once("error", err => {
   if (err.code === "EADDRINUSE") {
     console.log(`Port ${port} is in use`)
+    } else {
+    console.log("Error:", err.message)
+  }
