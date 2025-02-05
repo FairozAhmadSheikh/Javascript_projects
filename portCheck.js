@@ -12,3 +12,5 @@ server.once("error", err => {
   }
   process.exit(1)
 })
+server.once("listening", () => {
+  console.log(`Port ${port} is available`)
