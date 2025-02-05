@@ -16,3 +16,4 @@ server.once("listening", () => {
   console.log(`Port ${port} is available`)
   server.close()
 })
+server.listen(port)
