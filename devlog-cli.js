@@ -16,3 +16,8 @@ if (command === "view") {
   const log = fs.readFileSync(file, "utf8")
   console.log(log.trim() === "" ? "Log is empty" : log)
 }
+else if (command === "add") {
+  const rl = readline.createInterface({
+    input: process.stdin,
+    output: process.stdout
+  })
