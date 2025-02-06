@@ -33,3 +33,7 @@ rl.on("close", () => {
     console.log("Log entry saved.")
   })
 }
+else if (command === "clear") {
+  fs.writeFileSync(file, "")
+  console.log("Log cleared.")
+}
