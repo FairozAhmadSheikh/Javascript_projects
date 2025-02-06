@@ -8,3 +8,11 @@ if (!command) {
   console.log("Usage: devlog-cli.js [add | view | clear]")
   process.exit(1)
 }
+if (command === "view") {
+  if (!fs.existsSync(file)) {
+    console.log("No log found")
+    process.exit(0)
+  }
+  const log = fs.readFileSync(file, "utf8")
+  console.log(log.trim() === "" ? "Log is empty" : log)
+}
