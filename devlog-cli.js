@@ -29,3 +29,7 @@ else if (command === "add") {
   rl.on("line", line => {
     fs.appendFileSync(file, line + "\n")
   })
+rl.on("close", () => {
+    console.log("Log entry saved.")
+  })
+}
