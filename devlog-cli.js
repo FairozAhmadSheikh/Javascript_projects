@@ -21,3 +21,11 @@ else if (command === "add") {
     input: process.stdin,
     output: process.stdout
   })
+  const timestamp = new Date().toISOString()
+  fs.appendFileSync(file, `\n[${timestamp}]\n`)
+
+  console.log("Enter your log entry. Press Ctrl+D or Ctrl+C to save:")
+
+  rl.on("line", line => {
+    fs.appendFileSync(file, line + "\n")
+  })
