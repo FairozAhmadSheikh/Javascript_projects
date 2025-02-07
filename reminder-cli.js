@@ -40,3 +40,16 @@ function addReminder(time, text) {
   saveReminders(reminders)
   console.log("Reminder removed")
 }
+switch (command) {
+  case "list":
+    listReminders()
+    break
+  case "add":
+    addReminder(args[1], args.slice(2).join(" "))
+    break
+  case "remove":
+    removeReminder(parseInt(args[1]))
+    break
+  default:
+    console.log("Usage: reminder-cli.js [list | add TIME TEXT | remove INDEX]")
+}
