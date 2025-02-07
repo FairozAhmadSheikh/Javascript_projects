@@ -8,3 +8,6 @@ function loadReminders() {
   const data = fs.readFileSync(file, "utf8")
   return JSON.parse(data)
 }
+function saveReminders(reminders) {
+  fs.writeFileSync(file, JSON.stringify(reminders, null, 2))
+}
