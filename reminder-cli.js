@@ -30,4 +30,13 @@ function addReminder(time, text) {
   reminders.push({ time, text })
   saveReminders(reminders)
   console.log("Reminder added")
+}function removeReminder(index) {
+  const reminders = loadReminders()
+  if (index < 1 || index > reminders.length) {
+    console.log("Invalid reminder number")
+    return
+  }
+  reminders.splice(index - 1, 1)
+  saveReminders(reminders)
+  console.log("Reminder removed")
 }
