@@ -11,3 +11,13 @@ function loadReminders() {
 function saveReminders(reminders) {
   fs.writeFileSync(file, JSON.stringify(reminders, null, 2))
 }
+function listReminders() {
+  const reminders = loadReminders()
+  if (reminders.length === 0) {
+    console.log("No reminders set")
+    return
+  }
+  reminders.forEach((r, i) => {
+    console.log(`${i + 1}. ${r.time} - ${r.text}`)
+  })
+}
