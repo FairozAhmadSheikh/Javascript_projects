@@ -21,3 +21,13 @@ function listReminders() {
     console.log(`${i + 1}. ${r.time} - ${r.text}`)
   })
 }
+function addReminder(time, text) {
+  if (!time || !text) {
+    console.log("Usage: reminder-cli.js add TIME TEXT")
+    return
+  }
+  const reminders = loadReminders()
+  reminders.push({ time, text })
+  saveReminders(reminders)
+  console.log("Reminder added")
+}
