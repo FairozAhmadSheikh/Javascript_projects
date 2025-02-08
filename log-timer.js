@@ -33,3 +33,6 @@ else if (command === "clear") {
   fs.writeFileSync(file, "")
   console.log("Log cleared.")
 }
+else {
+  console.log("Unknown command")
+}
