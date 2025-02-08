@@ -11,3 +11,8 @@ if (!command) {
   console.log("Usage: log-timer.js [start | stop | log | clear]")
   process.exit(1)
 }
+if (command === "start") {
+  const entry = `START: ${now()}\n`
+  fs.appendFileSync(file, entry)
+  console.log("Started at", entry.trim())
+}
