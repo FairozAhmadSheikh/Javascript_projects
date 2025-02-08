@@ -29,3 +29,7 @@ else if (command === "log") {
   const log = fs.readFileSync(file, "utf8")
   console.log(log)
 }
+else if (command === "clear") {
+  fs.writeFileSync(file, "")
+  console.log("Log cleared.")
+}
