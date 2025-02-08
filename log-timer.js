@@ -16,3 +16,8 @@ if (command === "start") {
   fs.appendFileSync(file, entry)
   console.log("Started at", entry.trim())
 }
+else if (command === "stop") {
+  const entry = `STOP: ${now()}\n`
+  fs.appendFileSync(file, entry)
+  console.log("Stopped at", entry.trim())
+}
