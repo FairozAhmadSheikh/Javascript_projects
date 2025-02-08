@@ -21,3 +21,11 @@ else if (command === "stop") {
   fs.appendFileSync(file, entry)
   console.log("Stopped at", entry.trim())
 }
+else if (command === "log") {
+  if (!fs.existsSync(file)) {
+    console.log("No log found")
+    process.exit(0)
+  }
+  const log = fs.readFileSync(file, "utf8")
+  console.log(log)
+}
