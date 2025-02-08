@@ -7,3 +7,7 @@ const command = args[0]
 function now() {
   return new Date().toISOString()
 }
+if (!command) {
+  console.log("Usage: log-timer.js [start | stop | log | clear]")
+  process.exit(1)
+}
