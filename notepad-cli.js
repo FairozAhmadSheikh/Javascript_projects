@@ -17,3 +17,8 @@ if (command === "read") {
   const data = fs.readFileSync(file, "utf8")
   console.log(data.trim() === "" ? "No notes found" : data)
 }
+else if (command === "write") {
+  const rl = readline.createInterface({
+    input: process.stdin,
+    output: process.stdout
+  })
