@@ -39,3 +39,6 @@ else if (command === "clear") {
   fs.writeFileSync(file, "")
   console.log("All notes cleared.")
 }
+else {
+  console.log("Unknown command")
+}
