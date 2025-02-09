@@ -22,3 +22,16 @@ else if (command === "write") {
     input: process.stdin,
     output: process.stdout
   })
+  console.log("Enter your notes. Press Ctrl+D or Ctrl+C to save and exit:\n")
+
+  const stream = fs.createWriteStream(file, { flags: "a" })
+
+  rl.on("line", line => {
+    stream.write(line + "\n")
+  })
+
+  rl.on("close", () => {
+    stream.end()
+    console.log("Notes saved.")
+  })
+}
