@@ -35,3 +35,7 @@ else if (command === "write") {
     console.log("Notes saved.")
   })
 }
+else if (command === "clear") {
+  fs.writeFileSync(file, "")
+  console.log("All notes cleared.")
+}
