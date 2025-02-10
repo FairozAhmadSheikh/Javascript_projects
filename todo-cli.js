@@ -20,3 +20,8 @@ function listTodos() {
     console.log("No tasks found")
     return
   }
+  todos.forEach((todo, i) => {
+    const status = todo.done ? "[x]" : "[ ]"
+    console.log(`${i + 1}. ${status} ${todo.task}`)
+  })
+}
