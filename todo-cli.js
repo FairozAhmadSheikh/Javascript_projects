@@ -14,3 +14,9 @@ function loadTodos() {
 function saveTodos(todos) {
   fs.writeFileSync(file, JSON.stringify(todos, null, 2))
 }
+function listTodos() {
+  const todos = loadTodos()
+  if (todos.length === 0) {
+    console.log("No tasks found")
+    return
+  }
