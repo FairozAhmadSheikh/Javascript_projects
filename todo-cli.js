@@ -25,3 +25,8 @@ function listTodos() {
     console.log(`${i + 1}. ${status} ${todo.task}`)
   })
 }
+function addTodo(task) {
+  if (!task) {
+    console.log("Please provide a task to add")
+    return
+  }
