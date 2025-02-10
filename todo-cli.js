@@ -56,3 +56,19 @@ function removeTodo(index) {
   saveTodos(todos)
   console.log("Task removed")
 }
+switch (command) {
+  case "list":
+    listTodos()
+    break
+  case "add":
+    addTodo(args.slice(1).join(" "))
+    break
+  case "done":
+    markDone(parseInt(args[1]))
+    break
+  case "remove":
+    removeTodo(parseInt(args[1]))
+    break
+  default:
+    console.log("Usage: todo-cli.js [list | add TASK | done INDEX | remove INDEX]")
+}
