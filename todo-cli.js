@@ -41,3 +41,18 @@ function markDone(index) {
     console.log("Invalid task number")
     return
   }
+  todos[index - 1].done = true
+  saveTodos(todos)
+  console.log("Task marked as done")
+}
+
+function removeTodo(index) {
+  const todos = loadTodos()
+  if (index < 1 || index > todos.length) {
+    console.log("Invalid task number")
+    return
+  }
+  todos.splice(index - 1, 1)
+  saveTodos(todos)
+  console.log("Task removed")
+}
