@@ -35,3 +35,9 @@ function addTodo(task) {
   saveTodos(todos)
   console.log("Task added")
 }
+function markDone(index) {
+  const todos = loadTodos()
+  if (index < 1 || index > todos.length) {
+    console.log("Invalid task number")
+    return
+  }
