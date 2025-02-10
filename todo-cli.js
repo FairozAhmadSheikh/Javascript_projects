@@ -30,3 +30,8 @@ function addTodo(task) {
     console.log("Please provide a task to add")
     return
   }
+  const todos = loadTodos()
+  todos.push({ task, done: false })
+  saveTodos(todos)
+  console.log("Task added")
+}
