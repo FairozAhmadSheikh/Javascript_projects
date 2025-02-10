@@ -11,3 +11,6 @@ function loadTodos() {
   const data = fs.readFileSync(file, "utf8")
   return JSON.parse(data)
 }
+function saveTodos(todos) {
+  fs.writeFileSync(file, JSON.stringify(todos, null, 2))
+}
