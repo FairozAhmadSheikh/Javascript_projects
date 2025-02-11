@@ -8,3 +8,7 @@ let remaining = seconds
 const interval = setInterval(() => {
   console.log(remaining)
    remaining--
+   if (remaining < 0) {
+    clearInterval(interval)
+    console.log("Done")
+  }
