@@ -7,3 +7,4 @@ if (isNaN(seconds) || seconds < 1) {
 let remaining = seconds
 const interval = setInterval(() => {
   console.log(remaining)
+   remaining--
