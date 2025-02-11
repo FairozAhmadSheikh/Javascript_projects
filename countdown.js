@@ -5,3 +5,5 @@ if (isNaN(seconds) || seconds < 1) {
   process.exit(1)
 }
 let remaining = seconds
+const interval = setInterval(() => {
+  console.log(remaining)
