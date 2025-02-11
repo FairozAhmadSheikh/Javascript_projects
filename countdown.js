@@ -12,3 +12,4 @@ const interval = setInterval(() => {
     clearInterval(interval)
     console.log("Done")
   }
+  }, 1000)
