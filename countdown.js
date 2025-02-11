@@ -4,3 +4,4 @@ if (isNaN(seconds) || seconds < 1) {
   console.log("Please enter a valid number of seconds")
   process.exit(1)
 }
+let remaining = seconds
