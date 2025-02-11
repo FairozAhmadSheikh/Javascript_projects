@@ -1,2 +1,6 @@
 const args = process.argv.slice(2)
 const seconds = parseInt(args[0])
+if (isNaN(seconds) || seconds < 1) {
+  console.log("Please enter a valid number of seconds")
+  process.exit(1)
+}
