@@ -6,3 +6,6 @@ if (!filePath) {
   console.log("Please provide a JSON file path")
   process.exit(1)
 }
+fs.readFile(filePath, "utf8", (err, data) => {
+  if (err) {
+    
