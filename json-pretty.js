@@ -17,3 +17,6 @@ fs.readFile(filePath, "utf8", (err, data) => {
     console.log(pretty)
   }catch (e) {
     console.error("Invalid JSON")
+     process.exit(1)
+  }
+})
