@@ -15,3 +15,5 @@ fs.readFile(filePath, "utf8", (err, data) => {
     const parsed = JSON.parse(data)
     const pretty = JSON.stringify(parsed, null, 2)
     console.log(pretty)
+  }catch (e) {
+    console.error("Invalid JSON")
