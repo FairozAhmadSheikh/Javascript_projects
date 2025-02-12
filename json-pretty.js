@@ -11,3 +11,7 @@ fs.readFile(filePath, "utf8", (err, data) => {
     console.error("Error reading file:", err.message)
     process.exit(1)
   }
+  try {
+    const parsed = JSON.parse(data)
+    const pretty = JSON.stringify(parsed, null, 2)
+   
