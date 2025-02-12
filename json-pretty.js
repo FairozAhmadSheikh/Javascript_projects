@@ -14,4 +14,4 @@ fs.readFile(filePath, "utf8", (err, data) => {
   try {
     const parsed = JSON.parse(data)
     const pretty = JSON.stringify(parsed, null, 2)
-   
+    console.log(pretty)
