@@ -10,3 +10,4 @@ fs.readFile(filePath, "utf8", (err, data) => {
     console.error("Error reading file:", err.message)
     process.exit(1)
   }
+  const sorted = data.split("\n").sort().join("\n")
