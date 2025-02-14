@@ -13,3 +13,5 @@ fs.readFile(filePath, "utf8", (err, data) => {
   }
 const lines = data.split("\n")
 const unique = [...new Set(lines)]
+console.log(unique.join("\n"))
+})
