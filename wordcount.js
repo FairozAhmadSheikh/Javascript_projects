@@ -12,3 +12,5 @@ fs.readFile(filePath, "utf8", (err, data) => {
     process.exit(1)
   }
   const words = data.trim().split(/\s+/)
+  console.log(`Word count: ${words.length}`)
+})
