@@ -13,3 +13,4 @@ fs.readFile(filePath, "utf8", (err, data) => {
   }
   const reversed = data.split("\n").reverse().join("\n")
     console.log(reversed)
+)}
