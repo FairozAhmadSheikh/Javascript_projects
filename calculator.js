@@ -11,3 +11,9 @@ if (isNaN(num1) || isNaN(num2)) {
   console.log("Both operands must be numbers")
   process.exit(1)
 }
+let result
+
+switch (operator) {
+  case "+":
+    result = num1 + num2
+    break
