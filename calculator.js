@@ -30,3 +30,7 @@ switch (operator) {
     }
      result = num1 / num2
     break;
+    default:
+    console.log("Unsupported operator")
+    process.exit(1)
+}
