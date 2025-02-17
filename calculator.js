@@ -28,3 +28,5 @@ switch (operator) {
       console.log("Cannot divide by zero")
       process.exit(1)
     }
+     result = num1 / num2
+    break;
