@@ -7,3 +7,7 @@ if (args.length !== 3) {
 const num1 = parseFloat(args[0])
 const operator = args[1]
 const num2 = parseFloat(args[2])
+if (isNaN(num1) || isNaN(num2)) {
+  console.log("Both operands must be numbers")
+  process.exit(1)
+}
