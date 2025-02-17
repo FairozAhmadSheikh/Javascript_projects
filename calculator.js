@@ -34,3 +34,4 @@ switch (operator) {
     console.log("Unsupported operator")
     process.exit(1)
 }
+console.log(result)
