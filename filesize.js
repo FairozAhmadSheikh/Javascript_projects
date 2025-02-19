@@ -11,3 +11,4 @@ fs.stat(filePath, (err, stats) => {
     console.error("Error reading file:", err.message)
     process.exit(1)
   }
+if (stats.isFile())
