@@ -14,3 +14,7 @@ fs.stat(filePath, (err, stats) => {
 if (stats.isFile()){
     console.log(`${path.basename(filePath)}: ${stats.size} bytes`)
   } 
+  else {
+    console.log("The path is not a file")
+  }
+})
