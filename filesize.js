@@ -11,4 +11,6 @@ fs.stat(filePath, (err, stats) => {
     console.error("Error reading file:", err.message)
     process.exit(1)
   }
-if (stats.isFile())
+if (stats.isFile()){
+    console.log(`${path.basename(filePath)}: ${stats.size} bytes`)
+  } 
