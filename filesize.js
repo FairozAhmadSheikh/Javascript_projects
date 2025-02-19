@@ -6,3 +6,8 @@ if (!filePath) {
   console.log("Please provide a file path")
   process.exit(1)
 }
+fs.stat(filePath, (err, stats) => {
+  if (err) {
+    console.error("Error reading file:", err.message)
+    process.exit(1)
+  }
