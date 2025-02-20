@@ -11,3 +11,4 @@ for (let i = 2; i <= Math.sqrt(num); i++) {
     break
   }
 }
+console.log(isPrime ? "Prime" : "Not Prime")
