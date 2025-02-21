@@ -10,3 +10,5 @@ const apiKey = "demo"
 const url = `https://wttr.in/${city}?format=3`
 https.get(url, res => {
   let data = ""
+  res.on("data", chunk => data += chunk)
+  res.on("end", () => console.log(data))
