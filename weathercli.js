@@ -13,3 +13,4 @@ https.get(url, res => {
   res.on("data", chunk => data += chunk)
   res.on("end", () => console.log(data))
   }).on("error", err => {
+    console.error("Error fetching weather:", err.message)
