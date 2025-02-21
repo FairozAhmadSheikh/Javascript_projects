@@ -8,3 +8,5 @@ if (!city) {
 }
 const apiKey = "demo"
 const url = `https://wttr.in/${city}?format=3`
+https.get(url, res => {
+  let data = ""
