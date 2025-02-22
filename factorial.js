@@ -14,3 +14,5 @@ if (isNaN(num) || num < 0) {
   console.log("❌ Please enter a valid non-negative integer.");
   process.exit(1);
 }
+function factorial(n) {
+  if (n === 0 || n === 1) return 1;
