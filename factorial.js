@@ -8,3 +8,9 @@ if (args.length !== 1) {
 `);
   process.exit(1);
 }
+const num = parseInt(args[0]);
+
+if (isNaN(num) || num < 0) {
+  console.log("❌ Please enter a valid non-negative integer.");
+  process.exit(1);
+}
