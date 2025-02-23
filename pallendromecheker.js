@@ -14,4 +14,6 @@ const input = args.join(" ").toLowerCase().replace(/[^a-z0-9]/g, "");
 const reversed = input.split("").reverse().join("");
 if (input === reversed) {
   console.log("✅ It's a palindrome!");
-}else
+}else{
+  console.log("❌ Not a palindrome.");
+}
