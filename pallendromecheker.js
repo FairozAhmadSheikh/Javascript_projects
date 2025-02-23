@@ -11,3 +11,4 @@ if (args.length < 1) {
   process.exit(1);
 }
 const input = args.join(" ").toLowerCase().replace(/[^a-z0-9]/g, "");
+const reversed = input.split("").reverse().join("");
