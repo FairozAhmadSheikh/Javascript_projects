@@ -4,3 +4,9 @@ if (args.length < 1) {
   console.log(`
 ❌ Please enter a word or phrase to check.
 
+✅ Example:
+  node palindrome.js madam
+  node palindrome.js "A man a plan a canal Panama"
+`);
+  process.exit(1);
+}
