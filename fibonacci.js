@@ -24,3 +24,6 @@ function generateFibonacci(n) {
   }
   return fib;
 }
+const result = generateFibonacci(n);
+console.log(`📈 First ${n} Fibonacci number(s):`);
+console.log(result.join(", "));
