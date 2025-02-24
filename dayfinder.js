@@ -15,3 +15,5 @@ if (isNaN(inputDate)) {
   console.log("❌ Invalid date format. Use YYYY-MM-DD.");
   process.exit(1);
 }
+const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+const day = days[inputDate.getDay()];
