@@ -17,3 +17,4 @@ if (isNaN(inputDate)) {
 }
 const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
 const day = days[inputDate.getDay()];
+console.log(`📅 ${args[0]} is a ${day}.`);
