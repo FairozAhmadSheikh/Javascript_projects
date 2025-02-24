@@ -9,3 +9,9 @@ if (args.length !== 1) {
 `);
   process.exit(1);
 }
+const inputDate = new Date(args[0]);
+
+if (isNaN(inputDate)) {
+  console.log("❌ Invalid date format. Use YYYY-MM-DD.");
+  process.exit(1);
+}
