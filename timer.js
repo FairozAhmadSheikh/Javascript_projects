@@ -9,3 +9,14 @@ if (args.length !== 1 || isNaN(args[0])) {
 `);
   process.exit(1);
 }
+let seconds = parseInt(args[0]);
+
+console.log(`⏳ Countdown started for ${seconds} second(s)...`);
+
+const interval = setInterval(() => {
+  if (seconds <= 0) {
+    console.log("⏰ Time's up!");
+    clearInterval(interval);
+    return;
+  }
+  
