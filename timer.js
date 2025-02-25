@@ -19,4 +19,5 @@ const interval = setInterval(() => {
     clearInterval(interval);
     return;
   }
-  
+  console.log(`⏱️ ${seconds} second(s) remaining...`);
+  seconds--;
