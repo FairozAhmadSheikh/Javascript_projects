@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 const args = process.argv.slice(2);
 
 if (args.length !== 1 || isNaN(args[0])) {
@@ -9,6 +11,7 @@ if (args.length !== 1 || isNaN(args[0])) {
 `);
   process.exit(1);
 }
+
 let seconds = parseInt(args[0]);
 
 console.log(`⏳ Countdown started for ${seconds} second(s)...`);
@@ -19,5 +22,7 @@ const interval = setInterval(() => {
     clearInterval(interval);
     return;
   }
+
   console.log(`⏱️ ${seconds} second(s) remaining...`);
   seconds--;
+}, 1000);
