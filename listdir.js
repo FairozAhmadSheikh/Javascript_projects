@@ -11,3 +11,7 @@ fs.readdir(dirPath, (err, files) => {
   files.forEach(file => {
     const fullPath = path.join(dirPath, file)
     const stats = fs.statSync(fullPath)
+    const type = stats.isDirectory() ? "DIR" : "FILE"
+    console.log(`${type}: ${file}`)
+  })
+})
