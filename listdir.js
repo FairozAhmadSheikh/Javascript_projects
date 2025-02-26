@@ -8,3 +8,6 @@ fs.readdir(dirPath, (err, files) => {
     console.error("Error reading directory:", err.message)
     process.exit(1)
   }
+  files.forEach(file => {
+    const fullPath = path.join(dirPath, file)
+    const stats = fs.statSync(fullPath)
