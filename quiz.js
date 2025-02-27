@@ -15,3 +15,14 @@ const questions = [
     },
     answer: "b",
   },
+  {
+    question: "Which planet is known as the Red Planet?",
+    options: {
+      a: "Earth",
+      b: "Mars",
+      c: "Jupiter",
+      d: "Saturn",
+    },
+    answer: "b",
+  },
+  
