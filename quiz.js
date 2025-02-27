@@ -62,3 +62,5 @@ function askQuestion() {
     askQuestion();
   });
 }
+console.log("🧠 Welcome to the Quiz!");
+askQuestion();
