@@ -35,3 +35,13 @@ const questions = [
     },
     answer: "a",
   },
+  ];
+  let score = 0;
+let index = 0;
+
+function askQuestion() {
+  if (index >= questions.length) {
+    console.log(`\n✅ Quiz complete! Your score: ${score}/${questions.length}`);
+    rl.close();
+    return;
+  }
