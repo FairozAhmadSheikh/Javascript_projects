@@ -45,3 +45,20 @@ function askQuestion() {
     rl.close();
     return;
   }
+ const q = questions[index];
+  console.log(`\nQ${index + 1}: ${q.question}`);
+  for (const key in q.options) {
+    console.log(`  ${key}) ${q.options[key]}`);
+  }
+
+  rl.question("Your answer (a/b/c/d): ", (userInput) => {
+    if (userInput.toLowerCase() === q.answer) {
+      console.log("🎉 Correct!");
+      score++;
+    } else {
+      console.log(`❌ Wrong! Correct answer: ${q.answer}) ${q.options[q.answer]}`);
+    }
+    index++;
+    askQuestion();
+  });
+}
