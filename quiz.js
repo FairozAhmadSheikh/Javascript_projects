@@ -25,4 +25,13 @@ const questions = [
     },
     answer: "b",
   },
-  
+  {
+    question: "Who wrote 'To Kill a Mockingbird'?",
+    options: {
+      a: "Harper Lee",
+      b: "Mark Twain",
+      c: "George Orwell",
+      d: "J.K. Rowling",
+    },
+    answer: "a",
+  },
