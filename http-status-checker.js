@@ -17,3 +17,6 @@ const req = protocol.get(target, res => {
   console.log(`Headers:`)
   console.log(res.headers)
 })
+req.on("error", err => {
+  console.log("Request failed:", err.message)
+})
