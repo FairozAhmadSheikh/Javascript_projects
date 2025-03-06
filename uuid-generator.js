@@ -10,3 +10,8 @@ function generateUUID() {
     } else {
       uuid += Math.floor(Math.random() * 16).toString(16)
     }
+     }
+  return uuid
+}
+
+console.log(generateUUID())
