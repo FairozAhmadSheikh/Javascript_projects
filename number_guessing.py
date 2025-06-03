@@ -25,4 +25,9 @@ function askGuess() {
       console.log("📉 Too low!");
     } else if (guess > target) {
       console.log("📈 Too high!");
-    } else
+    } else{
+      console.log(`🎉 Correct! The number was ${target}`);
+      console.log(`📊 You took ${attempts} attempt(s).`);
+      rl.close();
+      return;
+    }
