@@ -31,3 +31,8 @@ function askGuess() {
       rl.close();
       return;
     }
+    askGuess();
+  });
+}
+
+askGuess();
