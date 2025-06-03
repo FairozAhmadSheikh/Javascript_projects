@@ -17,3 +17,5 @@ function askGuess() {
       rl.close();
       return;
     }
+    const guess = parseInt(input);
+    attempts++;
