@@ -19,3 +19,10 @@ function askGuess() {
     }
     const guess = parseInt(input);
     attempts++;
+    if (isNaN(guess)) {
+      console.log("❌ Please enter a valid number.");
+    } else if (guess < target) {
+      console.log("📉 Too low!");
+    } else if (guess > target) {
+      console.log("📈 Too high!");
+    } else
