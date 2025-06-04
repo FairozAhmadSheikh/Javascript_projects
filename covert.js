@@ -42,4 +42,8 @@ function convert(value, from, to) {
   }
 }
 const result = convert(value, from, to);
-
+if (result === null) {
+  console.log("❌ Unsupported conversion.");
+} else {
+  console.log(`✅ ${value} ${from} = ${result.toFixed(2)} ${to}`);
+}
