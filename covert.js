@@ -21,3 +21,13 @@ if (isNaN(value)) {
   console.log("❌ Invalid number provided.");
   process.exit(1);
 }
+function convert(value, from, to) {
+  const key = `${from.toLowerCase()}-${to.toLowerCase()}`;
+
+  switch (key) {
+    case "km-mi":
+      return value * 0.621371;
+    case "mi-km":
+      return value / 0.621371;
+    case "kg-lb":
+      return value * 2.20462;
