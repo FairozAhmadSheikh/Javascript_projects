@@ -12,3 +12,5 @@ if (args.length !== 3) {
   kg ⇄ lb
   C ⇄ F
 `);
+process.exit(1);
+}
