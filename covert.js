@@ -14,3 +14,10 @@ if (args.length !== 3) {
 `);
 process.exit(1);
 }
+const [valueStr, from, to] = args;
+const value = parseFloat(valueStr);
+
+if (isNaN(value)) {
+  console.log("❌ Invalid number provided.");
+  process.exit(1);
+}
