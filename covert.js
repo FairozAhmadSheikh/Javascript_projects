@@ -31,3 +31,13 @@ function convert(value, from, to) {
       return value / 0.621371;
     case "kg-lb":
       return value * 2.20462;
+       case "lb-kg":
+      return value / 2.20462;
+    case "c-f":
+      return (value * 9) / 5 + 32;
+    case "f-c":
+      return ((value - 32) * 5) / 9;
+    default:
+      return null;
+  }
+}
