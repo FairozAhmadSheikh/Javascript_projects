@@ -13,4 +13,4 @@ if (days < 0) {
   months -= 1
   const prevMonth = new Date(today.getFullYear(), today.getMonth(), 0)
   days += prevMonth.getDate()
-  
+  }
