@@ -18,3 +18,4 @@ if (days < 0) {
   years -= 1
   months += 12
 }
+console.log(`Age: ${years} years ${months} months ${days} days`)
