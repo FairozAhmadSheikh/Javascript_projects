@@ -6,3 +6,6 @@ if (!input || isNaN(Date.parse(input))) {
 }
 const birthDate = new Date(input)
 const today = new Date()
+let years = today.getFullYear() - birthDate.getFullYear()
+let months = today.getMonth() - birthDate.getMonth()
+let days = today.getDate() - birthDate.getDate()
