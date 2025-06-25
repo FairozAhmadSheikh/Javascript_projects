@@ -11,3 +11,5 @@ let months = today.getMonth() - birthDate.getMonth()
 let days = today.getDate() - birthDate.getDate()
 if (days < 0) {
   months -= 1
+  const prevMonth = new Date(today.getFullYear(), today.getMonth(), 0)
+  days += prevMonth.getDate()
