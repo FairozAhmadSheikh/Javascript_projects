@@ -16,3 +16,9 @@ const codeSamples = [
         return await this.model.predict(features);
     }
 }`,
+`const server = require('express')();
+server.get('/hack', (req, res) => {
+    res.send("System Breached 💀");
+});
+server.listen(3000);`
+];
