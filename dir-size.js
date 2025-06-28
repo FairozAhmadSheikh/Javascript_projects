@@ -29,4 +29,6 @@ try {
   console.log(`Directory Size: ${totalSize} B`)
   console.log(`Directory Size: ${sizeKB.toFixed(2)} KB`)
   console.log(`Directory Size: ${sizeMB.toFixed(2)} MB`)
-} catch
+} catch {
+  console.log("Invalid directory path or access denied")
+}
