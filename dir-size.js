@@ -26,3 +26,7 @@ try {
 
   const sizeKB = totalSize / 1024
   const sizeMB = sizeKB / 1024
+  console.log(`Directory Size: ${totalSize} B`)
+  console.log(`Directory Size: ${sizeKB.toFixed(2)} KB`)
+  console.log(`Directory Size: ${sizeMB.toFixed(2)} MB`)
+} catch
