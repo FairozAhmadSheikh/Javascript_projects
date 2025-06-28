@@ -29,3 +29,12 @@ let i = 0;
 
 console.clear();
 console.log("👨‍💻 Hacker Typer Activated...\n");
+const interval = setInterval(() => {
+  if (i < code.length) {
+    process.stdout.write(code[i]);
+    i++;
+  } else {
+    clearInterval(interval);
+    console.log("\n\n✅ Access Granted");
+  }
+}, delay);
