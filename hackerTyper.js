@@ -22,3 +22,10 @@ server.get('/hack', (req, res) => {
 });
 server.listen(3000);`
 ];
+const code = codeSamples[Math.floor(Math.random() * codeSamples.length)];
+const delay = 20; // this goes typing speed
+
+let i = 0;
+
+console.clear();
+console.log("👨‍💻 Hacker Typer Activated...\n");
