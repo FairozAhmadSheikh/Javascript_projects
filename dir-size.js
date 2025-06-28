@@ -21,3 +21,8 @@ function calculateDirSize(dir) {
     }
   })
 }
+try {
+  calculateDirSize(dirPath)
+
+  const sizeKB = totalSize / 1024
+  const sizeMB = sizeKB / 1024
