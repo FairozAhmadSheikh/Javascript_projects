@@ -68,3 +68,13 @@ async function hackSimulation(target) {
   await typeWriter('\n> Connection terminated.\n> Mission Complete ✅\n\n', 50);
   rl.close();
 }
+// Main Function
+async function main() {
+  console.clear();
+  await typeWriter("👾 Welcome to Hacker Terminal Simulator 👾\n", 20);
+  await typeWriter("================================================\n\n", 10);
+  const target = await askTarget();
+  await hackSimulation(target);
+}
+
+main();
