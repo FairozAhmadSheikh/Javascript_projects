@@ -19,3 +19,12 @@ function typeWriter(text, speed = 10) {
     }, speed);
   });
 }
+function loadingBar(task, duration = 3000) {
+  return new Promise((resolve) => {
+    const barLength = 30;
+    let progress = 0;
+    process.stdout.write(`${task} [`);
+    const interval = setInterval(() => {
+      const filled = Math.floor((progress / duration) * barLength);
+      const empty = barLength - filled;
+      process.stdout.clearLine(0);
