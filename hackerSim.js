@@ -47,3 +47,15 @@ function askTarget() {
     });
   });
 }
+// Step 2: Simulate the hacking process
+async function hackSimulation(target) {
+  console.clear();
+  await typeWriter(`> Pinging ${target}...`, 50);
+  await loadingBar('Network Scan');
+  await typeWriter(`\n> Port 22 open\n> Port 80 open\n> Port 443 open\n`, 20);
+
+  await loadingBar('Bypassing Firewall');
+  await typeWriter('\n> Firewall bypassed.\n', 20);
+
+  await loadingBar('Injecting Payload');
+  await typeWriter('\n> Payload successfully deployed!\n', 20);
