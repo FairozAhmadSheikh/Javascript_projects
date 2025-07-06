@@ -28,3 +28,14 @@ function loadingBar(task, duration = 3000) {
       const filled = Math.floor((progress / duration) * barLength);
       const empty = barLength - filled;
       process.stdout.clearLine(0);
+      process.stdout.cursorTo(0);
+      process.stdout.write(`${task} [${'#'.repeat(filled)}${'-'.repeat(empty)}] ${Math.floor((progress/duration)*100)}%`);
+      progress += 100;
+      if (progress >= duration) {
+        clearInterval(interval);
+        process.stdout.write(`] ✅\n`);
+        resolve();
+      }
+    }, 100);
+  });
+}
