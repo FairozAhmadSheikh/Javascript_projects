@@ -39,3 +39,11 @@ function loadingBar(task, duration = 3000) {
     }, 100);
   });
 }
+// Step 1: Ask user for a fake target
+function askTarget() {
+  return new Promise((resolve) => {
+    rl.question('Enter target IP/hostname: ', (target) => {
+      resolve(target);
+    });
+  });
+}
