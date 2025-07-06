@@ -59,3 +59,12 @@ async function hackSimulation(target) {
 
   await loadingBar('Injecting Payload');
   await typeWriter('\n> Payload successfully deployed!\n', 20);
+  await loadingBar('Extracting Files');
+  await typeWriter(`\n> files_dump.txt\n> passwords.csv\n> secrets.env\n`, 20);
+
+  await typeWriter('\n> Downloading data...', 20);
+  await loadingBar('Downloading', 2500);
+
+  await typeWriter('\n> Connection terminated.\n> Mission Complete ✅\n\n', 50);
+  rl.close();
+}
