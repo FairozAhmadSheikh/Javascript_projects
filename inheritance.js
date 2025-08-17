@@ -26,4 +26,9 @@ class Employee extends Person {
         return `Employee ID: ${this.employeeId}, Department: ${this.department}, Salary: $${this.salary}`;
     }
 
-    
+    // Override introduce method
+    introduce() {
+        super.introduce(); // Call the parent introduce
+        console.log(`I work in the ${this.department} department and my salary is $${this.salary}.`);
+    }
+}
