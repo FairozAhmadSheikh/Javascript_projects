@@ -21,3 +21,9 @@ class Employee extends Person {
         this.department = department;
         this.salary = salary;
     }
+    // Method to get employee details
+    getEmployeeDetails() {
+        return `Employee ID: ${this.employeeId}, Department: ${this.department}, Salary: $${this.salary}`;
+    }
+
+    
