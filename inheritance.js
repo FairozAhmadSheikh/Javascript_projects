@@ -4,3 +4,6 @@ class Person {
         this.lastName = lastName;
         this.age = age;
     }
+    getFullName() {
+        return `${this.firstName} ${this.lastName}`;
+    }
