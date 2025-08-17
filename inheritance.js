@@ -32,3 +32,9 @@ class Employee extends Person {
         console.log(`I work in the ${this.department} department and my salary is $${this.salary}.`);
     }
 }
+// Derived class: Manager (inherits from Employee)
+class Manager extends Employee {
+    constructor(firstName, lastName, age, employeeId, department, salary, teamSize) {
+        super(firstName, lastName, age, employeeId, department, salary);
+        this.teamSize = teamSize;
+    }
