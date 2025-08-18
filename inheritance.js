@@ -95,3 +95,9 @@ console.log("\n==== Employee ====");
 const employee1 = new Employee("Alice", "Smith", 30, "E123", "Finance", 50000);
 employee1.introduce();
 console.log(employee1.getEmployeeDetails());
+
+console.log("\n==== Manager ====");
+const manager1 = new Manager("Bob", "Johnson", 40, "M456", "IT", 90000, 10);
+manager1.introduce();
+console.log(manager1.getManagerDetails());
+manager1.conductMeeting();
