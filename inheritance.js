@@ -108,3 +108,5 @@ developer1.introduce();
 developer1.writeCode();
 console.log("\n==== Intern ====");
 const intern1 = new Intern("Dave", "White", 22, "I101", "Marketing", 6);
+intern1.introduce();
+intern1.learn();
