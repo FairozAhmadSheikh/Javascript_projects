@@ -69,3 +69,14 @@ class Developer extends Employee {
         console.log(`${this.getFullName()} is writing code in ${this.programmingLanguages.join(", ")}.`);
     }
 }
+// Derived class: Intern (inherits from Employee)
+class Intern extends Employee {
+    constructor(firstName, lastName, age, employeeId, department, durationMonths) {
+        super(firstName, lastName, age, employeeId, department, 0); // Intern has no salary
+        this.durationMonths = durationMonths;
+    }
+
+    // Override introduce method
+    introduce() {
+        console.log(`Hi, I am ${this.getFullName()}, an intern in the ${this.department} department for ${this.durationMonths} months.`);
+    }
