@@ -52,3 +52,9 @@ class Manager extends Employee {
         console.log(`${this.getFullName()} is conducting a meeting for ${this.teamSize} team members.`);
     }
 }
+// Derived class: Developer (inherits from Employee)
+class Developer extends Employee {
+    constructor(firstName, lastName, age, employeeId, department, salary, programmingLanguages) {
+        super(firstName, lastName, age, employeeId, department, salary);
+        this.programmingLanguages = programmingLanguages; // array
+    }
