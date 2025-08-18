@@ -38,3 +38,7 @@ class Manager extends Employee {
         super(firstName, lastName, age, employeeId, department, salary);
         this.teamSize = teamSize;
     }
+    // Method to get manager details
+    getManagerDetails() {
+        return `${this.getEmployeeDetails()}, Manages a team of ${this.teamSize} people`;
+    }
