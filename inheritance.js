@@ -47,3 +47,8 @@ class Manager extends Employee {
         super.introduce();
         console.log(`I manage a team of ${this.teamSize} people.`);
     }
+    // Additional method
+    conductMeeting() {
+        console.log(`${this.getFullName()} is conducting a meeting for ${this.teamSize} team members.`);
+    }
+}
