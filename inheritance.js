@@ -85,3 +85,13 @@ class Intern extends Employee {
         console.log(`${this.getFullName()} is learning new skills during the internship.`);
     }
 }
+
+// Test all classes
+console.log("==== Person ====");
+const person1 = new Person("John", "Doe", 45);
+person1.introduce();
+
+console.log("\n==== Employee ====");
+const employee1 = new Employee("Alice", "Smith", 30, "E123", "Finance", 50000);
+employee1.introduce();
+console.log(employee1.getEmployeeDetails());
