@@ -58,3 +58,14 @@ class Developer extends Employee {
         super(firstName, lastName, age, employeeId, department, salary);
         this.programmingLanguages = programmingLanguages; // array
     }
+    // Override introduce method
+    introduce() {
+        super.introduce();
+        console.log(`I am a developer skilled in: ${this.programmingLanguages.join(", ")}`);
+    }
+
+    // Additional method
+    writeCode() {
+        console.log(`${this.getFullName()} is writing code in ${this.programmingLanguages.join(", ")}.`);
+    }
+}
