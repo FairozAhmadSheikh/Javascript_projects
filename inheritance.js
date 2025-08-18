@@ -101,3 +101,8 @@ const manager1 = new Manager("Bob", "Johnson", 40, "M456", "IT", 90000, 10);
 manager1.introduce();
 console.log(manager1.getManagerDetails());
 manager1.conductMeeting();
+
+console.log("\n==== Developer ====");
+const developer1 = new Developer("fairoz", "Brown", 28, "D789", "Software", 70000, ["JavaScript", "Python", "Java"]);
+developer1.introduce();
+developer1.writeCode();
