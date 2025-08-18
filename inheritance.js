@@ -80,3 +80,8 @@ class Intern extends Employee {
     introduce() {
         console.log(`Hi, I am ${this.getFullName()}, an intern in the ${this.department} department for ${this.durationMonths} months.`);
     }
+    // Additional method
+    learn() {
+        console.log(`${this.getFullName()} is learning new skills during the internship.`);
+    }
+}
