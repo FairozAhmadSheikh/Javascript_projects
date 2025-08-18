@@ -106,3 +106,5 @@ console.log("\n==== Developer ====");
 const developer1 = new Developer("fairoz", "Brown", 28, "D789", "Software", 70000, ["JavaScript", "Python", "Java"]);
 developer1.introduce();
 developer1.writeCode();
+console.log("\n==== Intern ====");
+const intern1 = new Intern("Dave", "White", 22, "I101", "Marketing", 6);
