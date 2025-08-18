@@ -42,3 +42,8 @@ class Manager extends Employee {
     getManagerDetails() {
         return `${this.getEmployeeDetails()}, Manages a team of ${this.teamSize} people`;
     }
+    // Override introduce method
+    introduce() {
+        super.introduce();
+        console.log(`I manage a team of ${this.teamSize} people.`);
+    }
